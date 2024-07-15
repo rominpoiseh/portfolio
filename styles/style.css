@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Share+Tech&display=swap');
+
+/* :root cria as variáveis no css */
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: #dfe0e6;
+    --cor-terciaria: #5C469C;
+    --cor-quarta: #9290C3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* chamamos as variaveis com var(); */
+body {
+    /* height: 100vh; */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding:2% 0% 0% 18% ;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: "Montserrat" , sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600px;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.destaque-titulo {
+    color: var(--cor-quarta);
+}
+  
+.paragrafo {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 1.875rem;
+    gap: 82px
+}
+
+.apresentacao__conteudo {
+    margin-top: -50px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+
+}
+.apresentacao__conteudo__titulo {
+    font-size: 40px;
+    font-family: "Share Tech", sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: "Share Tech" , sans-serif;
+    font-weight: 400px;
+    font-size: 2.68rem;
+}
+
+.apresentacao__links__link {
+    /* background-color: #9290C3; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 5px outset var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 600;
+}
+
+.apresentacao__links__link:hover {
+    background-color: #9290C3;
+    padding: 3%;
+}
+
+.Email {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+}
+
+.imagemprincipal{
+    width: 50%;
+
+}
+
+.rodape{
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 16px;
+    position: relative;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    gap: 104px;
+    background-color: var(--cor-quarta);
+    color:black
+}
+
+.apresentacao__conteudo__sobremim{
+    margin-top: -50px;
+    font-size: 0,75rem;
+    width: 615px;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    bottom: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__conteudo__curriculo{
+    margin-top: -50px;
+    font-size: 1.25rem;
+    width: 615px;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    bottom: 0;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+    
+    
+}
+
+.apresentacao__conteudo__curriculo ul {
+    margin-top: 0;
+  }
+
+  .apresentacao__conteudo__curriculo li {
+    margin-bottom: 10px;
+  }
+
+.apresentacao__conteudo__curriculo__texto{
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.jogonumero{
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao{
+        padding: 5% ;
+        flex-direction: column-reverse;
+    }
+    .cabecalho{
+        padding: 12%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .apresentacao__conteudo__sobremim{
+        width: auto;
+        flex-direction: column-reverse;
+    }
+    .imagemprincipal{
+        width: auto;
+    }
+}
